@@ -56,12 +56,12 @@
 
             //On identifie le dossier pour les images
             //Sur les petits écrans on affiche les petites images et vice-versa (voir le dossier des images)
-            dossierImg = "images/_480/";
+            dossierImg = "./images/_480/";
 
             if (window.matchMedia("(min-width: 1024px)").matches) {
-                dossierImg = "images/_1024/";
+                dossierImg = "./images/_1024/";
             } else if (window.matchMedia("(min-width: 768px)").matches) {
-                dossierImg = "images/_768/";
+                dossierImg = "./images/_768/";
             }
 
             //console.log(dossierImg);
