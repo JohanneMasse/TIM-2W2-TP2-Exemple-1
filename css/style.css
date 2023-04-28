@@ -1,0 +1,307 @@
+/* Reset... */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Mise en page */
+html {
+  height: 100vh;
+  width: 100vw;
+  font-size: clamp(14px, 0.75rem + 1vw, 22px);
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Fjalla One", sans-serif;
+}
+
+body {
+  /*Position*/
+  position: relative;
+
+  /*Décoration*/
+  font-size: 1rem;
+  text-align: center;
+  background-color: white;
+  cursor: default;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  /*Étirement comme item flex*/
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  /*Conteneur flex en colonne*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  /*Décoration*/
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  /*Blanc*/
+}
+
+#entete {
+  /*Item flex*/
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+
+  /*Conteneur flex*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /*Décoration*/
+  background-color: #f75845;
+  /*Orange*/
+}
+
+#noQuestion,
+#titre {
+  /*Décoration*/
+  min-width: 15%;
+  font-size: 3rem;
+  background-color: #4d84f1;
+  /*Bleu*/
+  color: white;
+}
+
+#personnage {
+  /*Étirement comme item flex*/
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  /*Conteneur flex en colonne*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /*Decoration*/
+  width: 60%;
+  margin: auto;
+  background-color: #e5de7a;
+  /*Jaune*/
+}
+
+#image {
+  /*Étirement comme item flex*/
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  width: 100%;
+  height: 100%;
+
+  /*background-image: url("../images/_1024/tintin_0.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#question {
+  /*Decoration*/
+  padding: 0.3rem;
+  width: 100%;
+  background-color: #4d84f1;
+  /*Bleu*/
+  color: white;
+}
+
+#lesLettres {
+  /*Conteneur flex en rangée*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*Decoration*/
+  width: 100%;
+  background-color: #c8c9b9;
+  /*Gris pâle*/
+}
+
+.lettre {
+  /*Conteneur flex en rangée*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /*Decoration*/
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.lettre.choix {
+  /*Decoration*/
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#lesChoix {
+  width: 100%;
+
+  /*Conteneur flex en colonne*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.ligne {
+  /*Conteneur flex en ligne*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#texte {
+  /*Étirement comme item flex*/
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  width: 100%;
+  height: 100%;
+  background-color: #e5de7a;
+  /*Jaune*/
+  font-size: 5rem;
+  padding: 8rem;
+
+  background-image: url("../images/_480/finQuiz.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+
+.fenetre {
+  /*Décoration*/
+  padding: 2%;
+  font-size: 1.5rem;
+  background-color: #e5de7a;
+  /*Jaune*/
+  border: 1rem solid #4d84f1;
+  /*Bleu*/
+  cursor: pointer;
+
+  /*Image en background*/
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 50%;
+}
+
+/*Responsive Mobile first...*/
+/* Styles pour les écrans plus larges*/
+@media screen and (min-width: 768px) {
+  /*On augmente la taille du texte*/
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  #texte {
+    background-image: url("../images/_768/finQuiz.png");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+
+  #texte {
+    background-image: url("../images/_1024/finQuiz.png");
+  }
+}

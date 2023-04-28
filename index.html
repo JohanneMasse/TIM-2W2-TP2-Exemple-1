@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Exemple TP2</title>
+		
+		<!-- Ajustement de la taille du viewport-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		
+		<!-- Importation de la police de caractères Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+		
+	
+		<!-- Importation de la feuille de style-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!--Intégration des scripts de l'application-->
+		<script src="js/QuestionsQuiz.js"></script>
+		<script src="js/AnimTexte.js"></script>
+		<script src="js/FenetreReponse.js"></script>	
+		<script src="js/application.js"></script>
+
+		
+	</head>
+
+	<body>
+		<main>
+			  
+			<section class="introQuiz">
+				<div id="entete">
+					<div id="titre">Quiz</div>
+				</div>
+				<div id="texte"></div>
+			</section>
+			
+			<section class="quiz">
+				<div id="entete">
+					<div id="noQuestion">0</div>
+				</div>
+				<div id="personnage">
+					<div id="image"></div>
+					<div id="question"></div>
+				</div>
+				
+				<div id="lesLettres"></div>
+				
+				<div id="lesChoix">
+					<div class="ligne">
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+					</div>
+					<div class="ligne">
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+						<div class="choix lettre"></div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="finQuiz">
+				<div id="entete">
+					<div id="titre">Résultat</div>
+				</div>
+				<div id="texte"></div>
+			</section>
+
+		</main>
+
+	</body>
+</html>
